@@ -1,0 +1,95 @@
+<！doctype 超文本标记语言>
+<超文本标记语言 朗="zh-CN">
+<头>
+<元 字符集="UTF-8">
+<元 姓名="视口" 内容="宽度=设备宽度，初始比例=1.0">
+<标题>给你的心意</标题>
+<风格>
+*{边距：0；填充：0；框大小：边框；字体系列：system-ui}{边距：0；填充：0；框大小：边框框；字体系列：system-ui}
+身体{{
+背景：#100018；背景：#100018；
+脸色：#fff；color：#fff；
+最低高度：100vh；min-height:100vh；
+显示：柔性；显示：柔性；
+弯曲方向：立柱；弯曲方向：立柱；
+对齐-内容：居中；对齐-内容：居中；
+对齐项：居中；对齐项：居中；
+文本对齐：居中；文本对齐：居中；
+填充：24px；padding:24px；
+溢出：隐藏；溢出：隐藏；
+}
+.card{card{
+边框：3px实心#ff66bb；border:3px solid#ff66bb；
+填料：45px30px；padding:45px30px；
+边界半径：24px；border-radius:24px；
+最大宽度：440px；max-width:440px；
+宽度：100%；width:100%;
+Z指数：10；z指数：10；
+背景：rgba(16，0，24，0.背景：rgba(16，0，24，0.65)；
+}
+H2{{
+颜色：#ff66bb；颜色：#ff66bb；
+字体大小：36px；font-size:36px；
+底边距：26px；margin-bottom:26px；
+}
+.心脏{心脏{
+颜色：#ff4499；颜色：#ff4499；
+字体大小：45px；font-size:45px；
+页边距：22px0；margin:22px0；
+}
+p{{
+font-size:22px；font-size:22px；
+线高：1.8；线高：1.8；
+余量：14px0；margin:14px 0;
+脸色：#FFFFFF；脸色：#fffff；
+}
+.堕落之心{堕落的心{
+位置：固定；位置：固定；
+颜色：#ff66bb；颜色：#ff66bb；
+font-size:24px；font-size:24px；
+指针事件：无；指针事件：无；
+Z指数：1；z指数：1；
+不透明度：0.7；不透明度：0.7；
+动画：下降线性无限；动画：下降线性无限；
+}
+@keyframes fall{fall{
+0%{transform:translateY(-30px)；不透明度：0；}0%{transform:translateY(-30px)；不透明度：0；}
+10%{不透明度：0.8；}10%{不透明度：0.8；}
+90%{不透明度：0.7；}90%{不透明度：0.7；}
+100%{transform:translateY(100vh)；不透明度：0；}100%{transform:translateY(100vh)；不透明度：0；}
+}
+</风格>
+</头>
+<身体>
+<div 班级="卡">
+  <H2>♥ 致我喜欢的人 ♥</H2>
+  <div 班级="心脏">♥</div>
+  <p>不用急于奔赴远方，</p>
+  <p>不必追求轰轰烈烈。</p>
+  <p>往后的日子，</p>
+  <p>我们手牵着手慢慢走，</p>
+  <p>感受属于我们的温柔。</p>
+  <div 班级="心脏">♥</div>
+  <p>风雨也好，平凡也罢，我都在。</p>
+</div>
+
+<div 班级="音乐环绕">
+<iframe src="https://music.163.com/outchain/player?type=2&ID=1928073302&auto=0&高度=66" 高度="86" frameborder="0"></iframe>
+</div>
+
+<脚本>
+//爱心飘落动画
+函数createHeart(){createHeart(){
+const heart=document.createElement('div')；const heart=document.createElement('div')；
+心。classList。add('fall-heart')；heart.classList.add('fall-heart')；
+heart.innerText='♥'；heart.innerText='♥'；
+心。风格。left=Math.random()*100+'vw'；heart。风格。左=Math.random()*100+'vw'；
+常数持续时间=5+Math.random()*5；const duration=5+Math.random()*5；
+心。风格。animationDuration=持续时间+'s'；心脏。风格。animationDuration=持续时间+'s'；
+  document.body.appendChild(heart);document.body.appendChild(heart);
+setTimeout(()=>heart.remove()，持续时间*1000)；setTimeout(()=>heart.移除()，持续时间*1000)；
+}
+setInterval(createHeart，300)；(createHeart，300)；
+</脚本>
+</身体>
+  </超文本标记语言>
